@@ -1,0 +1,12 @@
+--Create a table of favorite books and rate 
+CREATE TABLE booklist (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER);
+
+INSERT into booklist VALUES (1, "Twilight", 3);
+INSERT into booklist VALUES (2, "The Nightingale", 1);
+INSERT into booklist VALUES (3, "All the Light We Cannot See", 2);
+
+--Display the table
+SELECT * FROM booklist;
+
+--Display the table ordered by most to least favorite
+SELECT * FROM booklist ORDER BY rating
